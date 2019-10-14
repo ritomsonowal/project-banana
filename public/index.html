@@ -28,6 +28,11 @@
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+     <!-- Loader -->
+     <div id="loading">
+        <img id="loading-image" src="images/loader.gif" alt="Loading..." />
+    </div>
   
   <div class="site-wrap">
 
@@ -579,6 +584,14 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
+
+   <!-- Loader Script -->
+  <script language="javascript" type="text/javascript">
+    $(window).on('load', function() {
+        console.log('Loading...');
+        $('#loading').fadeOut('slow');
+    });
+  </script>
 
   
   <script src="js/main.js"></script>
